@@ -1,9 +1,15 @@
-- name: 'shanghai'
+yass:
+  name: 'shanghai'
   popularity: 'Popular'
   coolness: 'Very cool city, the best'
-- name: 'rio'
+  person: 'Yass Barona'
+  pic_name: 'yass.jpeg'
+pablo:
+  name: 'rio'
   popularity: 'Not really popular'
   coolness: 'Meh'
+  person: 'Pablo Curell'
+  pic_name: 'pablo.jpeg'
 
 
 

@@ -20,3 +20,8 @@ activate :deploy do |deploy|
   deploy.build_before = true
   deploy.deploy_method = :git
 end
+
+data.places.each do |owner, name|
+  proxy "/#{name.person}.html", "/team.html", locals: { owner: name }, ignore: true
+end
+
