@@ -1,6 +1,10 @@
 <div class="navbar-wagon">
   <!-- Logo -->
-  <%= link_to "#{image_tag('images/logo.png')}", "index.html", class: "navbar-wagon-brand" %>
+
+  <% link_to 'index.html', class: 'navbar-wagon-brand' do %>
+    <%= image_tag 'logo.png'%>
+  <% end %>
+
 
 
   <!-- Right Navigation -->

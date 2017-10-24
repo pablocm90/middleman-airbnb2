@@ -12,9 +12,10 @@ title: Le Wagon - Middleman
 </div>
 
 <div class="container">
-
-  <% 2.times do %>
+  <div class="row">
+    <% 2.times do %>
     <% data.places.each do |place| %>
+    <div class="col-xs-12 col-sm-6">
       <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/<%= place.name %>');">
         <div class="card-category"><%= place.popularity %></div>
         <div class="card-description">
@@ -24,11 +25,15 @@ title: Le Wagon - Middleman
         <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
         <a class="card-link" href="#" ></a>
       </div>
+    </div>
     <% end %>
-  <% end %>
+    <% end %>
+  </div>
 
-  <p class="about">
+
+<br>
+  <div class="about text-center">
     <%= link_to "Meet the awesomes", "team.html", class: "btn btn-primary btn-lg" %>
-  </p>
+  </div>
 </div>
-</div>
+
